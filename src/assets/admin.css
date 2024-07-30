@@ -1,0 +1,103 @@
+.aheader {
+    position: relative; 
+    top: 0;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #333;
+}
+
+.aheader::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+    background-image: url("img.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.6;
+    z-index: -1; 
+}
+.anavbar-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(0, 0, 0, 0.27);
+}
+.anavbar-sub a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image-57-6{
+    height: 80px;
+    margin-right: 20px;
+    width: 270px;
+}
+.anavbar-sub a:active {
+    transform: scale(0.95);
+}
+.anavbar-sub a:hover {
+    background: rgba(214, 189, 189, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.8px);
+    -webkit-backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(214, 189, 189, 0.27);
+    transform: scale(1.05);
+}
+.eventlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .eventlist h3 {
+    margin-bottom: 20px;
+    margin-left:25px;
+  }
+  .cards{
+    display: flex;
+    flex-direction: row;
+  }
+  .event-card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .event-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card .MuiCardContent-root {
+    padding: 16px;
+  }
+  
+  .event-card .MuiTypography-root {
+    margin-bottom: 8px;
+    font-size: 1rem; /* Set a consistent font size */
+  }
+  
+  .event-card .MuiCardActions-root {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+  }
